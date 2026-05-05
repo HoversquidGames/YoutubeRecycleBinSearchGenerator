@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Search Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube Search Generator</h1>
+
+    <section class="output-section">
+      <div class="output-header">
+        <h2>Result</h2>
+        <button id="copyBtn" disabled>Copy</button>
+      </div>
+      <div class="output-box" id="outputBox">
+        <span id="resultText" class="placeholder">Select phrases below and click Generate.</span>
+      </div>
+    </section>
+
+    <button id="generateBtn" class="generate-btn">Generate</button>
+
+    <section class="phrase-section">
+      <div class="section-header">
+        <h2>Phrase Pool</h2>
+        <div class="bulk-controls">
+          <button id="selectAll">Select All</button>
+          <button id="selectNone">Deselect All</button>
+        </div>
+      </div>
+      <div class="phrase-list-scroll">
+        <ul id="phraseList"></ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
